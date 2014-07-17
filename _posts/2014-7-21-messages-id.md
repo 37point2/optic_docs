@@ -1,18 +1,17 @@
 ---
-category: Stuff
-path: '/stuff/:id'
-title: 'Delete a thing'
-type: 'DELETE'
+category: Messages
+path: '/v1/messages/id/:id'
+title: 'Retrieve message by id'
+type: 'GET'
 
 layout: nil
 ---
 
-This method allows the user to post a new thing to his stuff.
+This method allows the user to get a message by id.
 
 ### Request
 
-* **`:id`** is the id the thing to delete.
-* The headers must include a **valid authentication token**.
+* **`:id`** is the id of the message.
 * **The body is omitted**.
 
 ### Response
